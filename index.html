@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Nikkah - بِسْمِ ٱللَّٰهِ</title> 
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="countdown-page">
+
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Islamic Geometric Pattern Overlay -->
+    <div class="pattern-overlay"></div>
+
+    <!-- Main Content -->
+    <div class="countdown-wrapper">
+        
+        <!-- Bismillah Header -->
+        <div class="bismillah-header" data-aos="fade-down" data-aos-duration="1000">
+            <div class="islamic-border-top">
+                <svg viewBox="0 0 200 20" class="border-svg">
+                    <path d="M0,10 Q25,0 50,10 Q75,20 100,10 Q125,0 150,10 Q175,20 200,10" 
+                          fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+                </svg>
+            </div>
+            <h3 class="bismillah-text">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h3>
+            <p class="bismillah-translation">In the name of Allah, the Most Gracious, the Most Merciful</p>
+        </div>
+
+        <!-- Quran Verse -->
+        <div class="quran-verse" data-aos="fade-up" data-aos-delay="200">
+            <div class="verse-decoration left">✦</div>
+            <p class="arabic-verse">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+            <p class="verse-english">"And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them, and He has put love and mercy between your hearts."</p>
+            <p class="verse-reference">— Surah Ar-Rum (30:21)</p>
+            <div class="verse-decoration right">✦</div>
+        </div>
+
+        <!-- Names Section -->
+        <div class="names-section" data-aos="zoom-in" data-aos-delay="400">
+            <div class="ornament-left">
+                <svg viewBox="0 0 50 50" class="ornament-svg">
+                    <circle cx="25" cy="25" r="20" fill="none" stroke="var(--gold)" stroke-width="0.5"/>
+                    <circle cx="25" cy="25" r="15" fill="none" stroke="var(--gold)" stroke-width="0.5"/>
+                    <path d="M25,5 L25,45 M5,25 L45,25" fill="none" stroke="var(--gold)" stroke-width="0.3" opacity="0.5"/>
+                </svg>
+            </div>
+            <h1 class="groom-name">Samly</h1>
+            <div class="ampersand-container">
+                <span class="ampersand">&</span>
+                <div class="ring-icon">
+                    <i class="fas fa-ring"></i>
+                </div>
+            </div>
+            <h1 class="bride-name">Asma</h1>
+            <div class="ornament-right">
+                <svg viewBox="0 0 50 50" class="ornament-svg">
+                    <circle cx="25" cy="25" r="20" fill="none" stroke="var(--gold)" stroke-width="0.5"/>
+                    <circle cx="25" cy="25" r="15" fill="none" stroke="var(--gold)" stroke-width="0.5"/>
+                    <path d="M25,5 L25,45 M5,25 L45,25" fill="none" stroke="var(--gold)" stroke-width="0.3" opacity="0.5"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Nikkah Label -->
+        <div class="event-label" data-aos="fade-up" data-aos-delay="500">
+            <span class="label-line"></span>
+            <span class="label-text">Nikkah Ceremony</span>
+            <span class="label-line"></span>
+        </div>
+
+        <!-- Wedding Date Display -->
+        <div class="wedding-date-display" data-aos="fade-up" data-aos-delay="600">
+            <i class="fas fa-mosque mosque-icon"></i>
+            <p class="wedding-date-text" id="weddingDateText">Saturday, 15th August 2025</p>
+        </div>
+
+        <!-- Hands Animation Section -->
+        <div class="hands-container" data-aos="fade-up" data-aos-delay="700">
+            <div class="hands-wrapper">
+                <!-- Left Hand (Groom - Your left hand) -->
+                <div class="hand left-hand" id="leftHand">
+                    <div class="hand-image-wrapper">
+                        <!-- Replace with your actual hand image -->
+                        <img src="images/left-hand.png" alt="Groom's Hand" class="hand-img">
+                        <div class="hand-glow left-glow"></div>
+                    </div>
+                    <span class="hand-label groom-label">His Hand</span>
+                </div>
+
+                <!-- Center - Connection Effect -->
+                <div class="hands-center" id="handsCenter">
+                    <div class="connection-ring" id="connectionRing">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <div class="spark-container" id="sparkContainer"></div>
+                    <div class="heart-burst" id="heartBurst">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- Right Hand (Bride - Her right hand) -->
+                <div class="hand right-hand" id="rightHand">
+                    <div class="hand-image-wrapper">
+                        <!-- Replace with your actual hand image -->
+                        <img src="images/right-hand.png" alt="Bride's Hand" class="hand-img">
+                        <div class="hand-glow right-glow"></div>
+                    </div>
+                    <span class="hand-label bride-label">Her Hand</span>
+                </div>
+            </div>
+            
+            <!-- Distance Indicator -->
+            <div class="distance-indicator" id="distanceIndicator">
+                <div class="distance-bar">
+                    <div class="distance-fill" id="distanceFill"></div>
+                </div>
+                <p class="distance-text" id="distanceText">Hands getting closer...</p>
+            </div>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-container" data-aos="fade-up" data-aos-delay="800">
+            <h2 class="countdown-title">
+                <span class="title-decoration">✧</span>
+                Counting Down to Our Beautiful Beginning
+                <span class="title-decoration">✧</span>
+            </h2>
+            
+            <div class="countdown-boxes" id="countdown">
+                <div class="countdown-box">
+                    <div class="count-number" id="days">000</div>
+                    <div class="count-label">Days</div>
+                    <div class="box-decoration"></div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-box">
+                    <div class="count-number" id="hours">00</div>
+                    <div class="count-label">Hours</div>
+                    <div class="box-decoration"></div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-box">
+                    <div class="count-number" id="minutes">00</div>
+                    <div class="count-label">Minutes</div>
+                    <div class="box-decoration"></div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-box">
+                    <div class="count-number" id="seconds">00</div>
+                    <div class="count-label">Seconds</div>
+                    <div class="box-decoration"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dua Section -->
+        <div class="dua-section" data-aos="fade-up" data-aos-delay="900">
+            <p class="dua-arabic">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</p>
+            <p class="dua-english">"Our Lord, grant us from among our wives and offspring comfort to our eyes and make us leaders for the righteous."</p>
+            <p class="dua-reference">— Surah Al-Furqan (25:74)</p>
+        </div>
+
+        <!-- Enter Button (Hidden until wedding day) -->
+        <div class="enter-section" id="enterSection" style="display: none;">
+            <div class="enter-celebration">
+                <div class="celebration-text">
+                    <i class="fas fa-star-and-crescent"></i>
+                    <h2>Alhamdulillah! The Day Has Arrived!</h2>
+                    <p>ٱلْحَمْدُ لِلَّٰهِ</p>
+                </div>
+            </div>
+            
+            <div class="password-section" id="passwordSection">
+                <div class="lock-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Enter Our Private Garden 🌸</h3>
+                <p class="password-hint">Enter the special password to view our journey together</p>
+                <div class="password-input-wrapper">
+                    <input type="password" id="passwordInput" placeholder="Enter Password..." 
+                           class="password-input" autocomplete="off">
+                    <button id="unlockBtn" class="unlock-btn">
+                        <i class="fas fa-unlock-alt"></i>
+                        <span>Unlock</span>
+                    </button>
+                </div>
+                <p class="password-error" id="passwordError" style="display: none;">
+                    <i class="fas fa-exclamation-circle"></i> Incorrect password. Try again!
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="countdown-footer" data-aos="fade-up" data-aos-delay="1000">
+            <div class="islamic-border-bottom">
+                <svg viewBox="0 0 200 20" class="border-svg">
+                    <path d="M0,10 Q25,0 50,10 Q75,20 100,10 Q125,0 150,10 Q175,20 200,10" 
+                          fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+                </svg>
+            </div>
+            <p class="footer-text">
+                <i class="fas fa-heart"></i> 
+                Made with love & Tawakkul 
+                <i class="fas fa-heart"></i>
+            </p>
+            <p class="footer-dua">May Allah bless this union — Ameen 🤲</p>
+        </div>
+
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

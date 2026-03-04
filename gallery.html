@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey Together - بِسْمِ ٱللَّٰهِ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="gallery-page">
+
+    <!-- Access Check Overlay -->
+    <div class="access-overlay" id="accessOverlay">
+        <div class="access-check">
+            <div class="spinner"></div>
+            <p>Verifying access...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="gallery-nav">
+        <div class="nav-brand">
+            <i class="fas fa-star-and-crescent"></i>
+            <span>Our Nikkah Journey</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about-us" class="nav-link">About Us</a>
+            <a href="#our-story" class="nav-link">Our Story</a>
+            <a href="#memories" class="nav-link">Memories</a>
+            <a href="#future" class="nav-link">Future Dreams</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#about-us" class="mobile-nav-link">About Us</a>
+        <a href="#our-story" class="mobile-nav-link">Our Story</a>
+        <a href="#memories" class="mobile-nav-link">Memories</a>
+        <a href="#future" class="mobile-nav-link">Future Dreams</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <h3 class="hero-bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h3>
+            <h1 class="hero-title">Our Journey Together</h1>
+            <div class="hero-names">
+                <span class="hero-groom">Groom Name</span>
+                <span class="hero-amp">&</span>
+                <span class="hero-bride">Bride Name</span>
+            </div>
+            <p class="hero-verse">"And He it is who has created man from water, and has appointed for him kindred by
+                blood and kindred by marriage." — Surah Al-Furqan (25:54)</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT US SECTION ============ -->
+    <section id="about-us" class="section about-section">
+        <div class="section-header" data-aos="fade-up">
+            <div class="header-ornament">✦</div>
+            <h2 class="section-title">About Us</h2>
+            <p class="section-subtitle">Two souls united by Allah's decree</p>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="about-cards-container">
+            <!-- Groom Card -->
+            <div class="about-card groom-card" data-aos="fade-right" data-aos-delay="200">
+                <div class="card-pattern"></div>
+                <div class="card-avatar">
+                    <div class="avatar-ring">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <!-- Replace with: <img src="images/groom-avatar.jpg" alt="Groom"> -->
+                    </div>
+                </div>
+                <h3 class="card-name">Groom Name</h3>
+                <div class="card-role">The Groom</div>
+
+                <div class="profession-badge">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Software Engineer & Lecturer</span>
+                </div>
+
+                <div class="card-details">
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <strong>Education</strong>
+                            <p>BSc (Hons) in Software Engineering</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <strong>Full-Time</strong>
+                            <p>University Lecturer</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <strong>Part-Time</strong>
+                            <p>Freelance Developer (POS Systems, Websites)</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <strong>Passion</strong>
+                            <p>Building solutions & teaching future devs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"In code and in life, every bug leads to a better version."</p>
+                </div>
+
+                <div class="card-skills">
+                    <span class="skill-tag">HTML/CSS/JS</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Teaching</span>
+                </div>
+            </div>
+
+            <!-- Center Heart -->
+            <div class="about-center" data-aos="zoom-in" data-aos-delay="400">
+                <div class="center-heart-container">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring delay-1"></div>
+                    <div class="pulse-ring delay-2"></div>
+                    <i class="fas fa-heart center-heart"></i>
+                </div>
+                <p class="center-text">United in<br>Islam</p>
+                <div class="center-verse">
+                    <p>سُبْحَانَ ٱللَّٰهِ</p>
+                </div>
+            </div>
+
+            <!-- Bride Card -->
+            <div class="about-card bride-card" data-aos="fade-left" data-aos-delay="200">
+                <div class="card-pattern"></div>
+                <div class="card-avatar">
+                    <div class="avatar-ring">
+                        <div class="avatar-placeholder bride-avatar">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <!-- Replace with: <img src="images/bride-avatar.jpg" alt="Bride"> -->
+                    </div>
+                </div>
+                <h3 class="card-name">Bride Name</h3>
+                <div class="card-role">The Bride</div>
+
+                <div class="profession-badge bride-badge">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Medical Student</span>
+                </div>
+
+                <div class="card-details">
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <strong>Education</strong>
+                            <p>MBBS (Faculty of Medicine)</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <strong>University</strong>
+                            <p>University Name, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <div>
+                            <strong>Dream</strong>
+                            <p>To serve humanity through medicine</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <strong>Quality</strong>
+                            <p>Compassionate & Dedicated</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Healing is an art, and every patient is a canvas of hope."</p>
+                </div>
+
+                <div class="card-skills">
+                    <span class="skill-tag bride-tag">Medicine</span>
+                    <span class="skill-tag bride-tag">Anatomy</span>
+                    <span class="skill-tag bride-tag">Patient Care</span>
+                    <span class="skill-tag bride-tag">Research</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fun Quote -->
+        <div class="couple-quote" data-aos="fade-up" data-aos-delay="600">
+            <div class="quote-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="quote-text">"She fixes hearts, he fixes bugs — together they'll fix the world, In Shaa Allah!"
+                </p>
+                <div class="quote-decoration">
+                    <i class="fas fa-laptop-code"></i>
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-stethoscope"></i>
+                    <i class="fas fa-equals"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ OUR STORY / MEMORIES TIMELINE ============ -->
+    <section id="our-story" class="section story-section">
+        <div class="section-header" data-aos="fade-up">
+            <div class="header-ornament">✦</div>
+            <h2 class="section-title">Our Beautiful Story</h2>
+            <p class="section-subtitle">Every moment was written by the Best of Planners</p>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <!-- Memory 1: First Official Meeting -->
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-dot">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="memory-card">
+                        <div class="memory-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>October 12, 2025</span>
+                        </div>
+                        <h3 class="memory-title">
+                            <i class="fas fa-star"></i>
+                            The First Official Meeting at Home
+                        </h3>
+                        <div class="memory-image-container">
+                            <img src="images/memory1.jpg" alt="First Official Meeting" class="memory-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <p class="memory-description">
+                            SubhanAllah, the day our families officially met.
+                            The nervousness, the excitement, the hope in our hearts — everything felt perfectly
+                            orchestrated by Allah.
+                            Little did we know, this was just the beginning of our beautiful journey together.
+                            From that very first glance, destiny started weaving its magic. Alhamdulillah!
+                        </p>
+                        <div class="memory-emotion">
+                            <span class="emotion-tag">💫 Nervous</span>
+                            <span class="emotion-tag">😊 Hopeful</span>
+                            <span class="emotion-tag">🤲 Grateful</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory 2: First Message -->
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-dot">
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="memory-card">
+                        <div class="memory-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>November 27, 2025</span>
+                        </div>
+                        <h3 class="memory-title">
+                            <i class="fas fa-envelope-open-text"></i>
+                            The First Message
+                        </h3>
+                        <div class="message-bubble-container">
+                            <div class="message-bubble sent">
+                                <p>Assalamu Alaikum... 😊</p>
+                                <span class="msg-time">Nov 27, 7:30 PM</span>
+                            </div>
+                            <div class="message-bubble received">
+                                <p>Wa Alaikum Assalam! 😊</p>
+                                <span class="msg-time">7:32 PM</span>
+                            </div>
+                            <div class="message-bubble sent">
+                                <p>How was your day?</p>
+                                <span class="msg-time">7:33 PM</span>
+                            </div>
+                            <div class="message-bubble received">
+                                <p>Alhamdulillah, it was good. Yours? 💭</p>
+                                <span class="msg-time">7:35 PM</span>
+                            </div>
+                        </div>
+                        <p class="memory-description">
+                            A simple "Assalamu Alaikum" that changed everything.
+                            Who knew that this ordinary greeting would start a conversation we never wanted to end?
+                            From awkward hellos to comfortable silences — every message brought us closer.
+                            MashaAllah, this was when our hearts started speaking the same language.
+                        </p>
+                        <div class="memory-emotion">
+                            <span class="emotion-tag">💬 First Words</span>
+                            <span class="emotion-tag">🦋 Butterflies</span>
+                            <span class="emotion-tag">😄 Excited</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory 3: "I Love You" Message -->
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-dot">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="memory-card love-card">
+                        <div class="memory-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>December 21, 2025</span>
+                        </div>
+                        <h3 class="memory-title">
+                            <i class="fas fa-heart"></i>
+                            The First "I Love You"
+                        </h3>
+                        <div class="love-declaration">
+                            <div class="love-hearts">
+                                <i class="fas fa-heart float-heart h1"></i>
+                                <i class="fas fa-heart float-heart h2"></i>
+                                <i class="fas fa-heart float-heart h3"></i>
+                                <i class="fas fa-heart float-heart h4"></i>
+                                <i class="fas fa-heart float-heart h5"></i>
+                            </div>
+                            <div class="love-text">
+                                <p class="love-quote">"I love you — and I want to spend the rest of my life making you
+                                    smile, In Shaa Allah" 💕</p>
+                            </div>
+                        </div>
+                        <div class="memory-image-container">
+                            <img src="images/memory2.jpg" alt="First I Love You" class="memory-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <p class="memory-description">
+                            The day we finally said what our hearts had known all along.
+                            Three simple words that carried the weight of a lifetime commitment.
+                            Alhamdulillah for giving us the courage to speak what was already written in our destiny.
+                            This was the moment everything changed — for the better, forever.
+                            From strangers to soulmates, SubhanAllah! ❤️
+                        </p>
+                        <div class="memory-emotion">
+                            <span class="emotion-tag">❤️ Love</span>
+                            <span class="emotion-tag">🤲 Dua Answered</span>
+                            <span class="emotion-tag">😭 Happy Tears</span>
+                            <span class="emotion-tag">✨ Blessed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory 4: First Call -->
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-dot">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="memory-card">
+                        <div class="memory-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>December 26, 2025</span>
+                        </div>
+                        <h3 class="memory-title">
+                            <i class="fas fa-phone-alt"></i>
+                            The First Phone Call
+                        </h3>
+                        <div class="call-animation">
+                            <div class="phone-icon-wrapper">
+                                <i class="fas fa-phone-volume"></i>
+                                <div class="sound-wave wave-1"></div>
+                                <div class="sound-wave wave-2"></div>
+                                <div class="sound-wave wave-3"></div>
+                            </div>
+                            <p class="call-duration">Duration: Forever in my heart ⏱️</p>
+                        </div>
+                        <div class="memory-image-container">
+                            <img src="images/memory3.jpg" alt="First Call Memory" class="memory-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <p class="memory-description">
+                            Finally hearing your voice for the first time through the phone... SubhanAllah!
+                            The nervous laughter, the awkward pauses, the sweet "you hang up first" moments.
+                            Messages were beautiful, but hearing your voice made everything so much more real.
+                            We talked until our phones begged for mercy (and charging!) 😄
+                            That day, distance meant nothing because our hearts were already close.
+                        </p>
+                        <div class="memory-emotion">
+                            <span class="emotion-tag">📞 First Voice</span>
+                            <span class="emotion-tag">😊 Nervous Laughter</span>
+                            <span class="emotion-tag">⏰ Time Flew</span>
+                            <span class="emotion-tag">💭 Couldn't Stop Smiling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory 5: First Unofficial Meet in Kandy -->
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-dot">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="memory-card">
+                        <div class="memory-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>December 28, 2025</span>
+                        </div>
+                        <h3 class="memory-title">
+                            <i class="fas fa-map-marker-alt"></i>
+                            First Unofficial Meet at Kandy
+                        </h3>
+                        <div class="location-badge">
+                            <i class="fas fa-dharmachakra"></i>
+                            <span>Kandy - The Hill Capital 🏔️</span>
+                        </div>
+                        <div class="memory-image-container polaroid-style">
+                            <div class="polaroid">
+                                <img src="images/memory4.jpg" alt="Kandy Meeting" class="memory-image">
+                                <div class="polaroid-caption">Our Kandy Adventure 🌄</div>
+                            </div>
+                        </div>
+                        <p class="memory-description">
+                            Kandy — where the mountains whispered our story and the lake reflected our smiles.
+                            Our first unofficial meet, away from formal settings, just two hearts trying to know each
+                            other better.
+                            Walking together, talking about dreams, laughing at silly jokes — MashaAllah!
+                            The cool breeze, the beautiful scenery, but nothing compared to the beauty of this moment we
+                            shared.
+                            Kandy will forever hold a special place in our story. 💚
+                        </p>
+                        <div class="memory-emotion">
+                            <span class="emotion-tag">🏔️ Kandy</span>
+                            <span class="emotion-tag">😊 Real Connection</span>
+                            <span class="emotion-tag">🚶‍♂️ Walking Together</span>
+                            <span class="emotion-tag">💫 Special</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory 6: First Video Call -->
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-dot">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="memory-card">
+                        <div class="memory-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>January 15, 2026</span>
+                        </div>
+                        <h3 class="memory-title">
+                            <i class="fas fa-video"></i>
+                            The First Video Call
+                        </h3>
+                        <div class="video-call-frame">
+                            <div class="video-screen">
+                                <div class="video-placeholder">
+                                    <i class="fas fa-user-circle"></i>
+                                    <p>Finally seeing each other! 📹</p>
+                                </div>
+                                <div class="video-controls">
+                                    <span class="control-icon"><i class="fas fa-video"></i></span>
+                                    <span class="control-icon"><i class="fas fa-microphone"></i></span>
+                                    <span class="control-icon active"><i class="fas fa-heart"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="memory-image-container">
+                            <img src="images/memory5.jpg" alt="Video Call Memory" class="memory-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <p class="memory-description">
+                            From voice calls to finally seeing each other's face on screen — Alhamdulillah!
+                            The shy smiles, the "wait, let me fix my camera" moments, the comfortable silences that
+                            spoke volumes.
+                            Technology brought our hearts closer, even when miles kept us apart.
+                            Every video call was a reminder that In Shaa Allah, one day we won't need screens —
+                            we'll be together, forever. Until then, these pixels carried our love. 💻💕
+                        </p>
+                        <div class="memory-emotion">
+                            <span class="emotion-tag">📹 Seeing You</span>
+                            <span class="emotion-tag">😊 Shy Smiles</span>
+                            <span class="emotion-tag">💕 Closer</span>
+                            <span class="emotion-tag">⏰ Hours Passed Like Minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline End - Nikkah -->
+            <div class="timeline-item center" data-aos="zoom-in">
+                <div class="timeline-dot nikkah-dot">
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="memory-card nikkah-card">
+                        <h3 class="memory-title nikkah-title">
+                            <i class="fas fa-star-and-crescent"></i>
+                            Our Nikkah Day
+                            <i class="fas fa-star-and-crescent"></i>
+                        </h3>
+                        <p class="nikkah-date">In Shaa Allah — Coming Soon</p>
+                        <div class="nikkah-decoration">
+                            <div class="nikkah-hearts">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p class="nikkah-verse">
+                            "And We created you in pairs" — Surah An-Naba (78:8)
+                        </p>
+                        <p class="nikkah-description">
+                            From strangers to friends, from friends to soulmates —
+                            every moment led us here. Alhamdulillah for this beautiful journey,
+                            and In Shaa Allah for the forever that awaits us. 🤲💍
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ QUOTES GALLERY SECTION ============ -->
+    <section id="memories" class="section quotes-section">
+        <div class="section-header" data-aos="fade-up">
+            <div class="header-ornament">✦</div>
+            <h2 class="section-title">Words From the Heart</h2>
+            <p class="section-subtitle">Islamic quotes that define our love</p>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="quotes-grid">
+            <div class="quote-card-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="quote-image-bg" style="background-image: url('images/quote-bg1.jpg')"></div>
+                <div class="quote-overlay"></div>
+                <div class="quote-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"The best among you are those who are best to their wives."</p>
+                    <span class="quote-source">— Prophet Muhammad ﷺ</span>
+                </div>
+            </div>
+
+            <div class="quote-card-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="quote-image-bg" style="background-image: url('images/quote-bg2.jpg')"></div>
+                <div class="quote-overlay"></div>
+                <div class="quote-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"When a husband and wife look at each other with love, Allah looks at both of them with mercy."
+                    </p>
+                    <span class="quote-source">— Sahih Bukhari</span>
+                </div>
+            </div>
+
+            <div class="quote-card-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="quote-image-bg" style="background-image: url('images/quote-bg3.jpg')"></div>
+                <div class="quote-overlay"></div>
+                <div class="quote-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"And live with them in kindness. For if you dislike them — perhaps you dislike a thing and Allah
+                        makes therein much good."</p>
+                    <span class="quote-source">— Surah An-Nisa (4:19)</span>
+                </div>
+            </div>
+
+            <div class="quote-card-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="quote-image-bg" style="background-image: url('images/quote-bg4.jpg')"></div>
+                <div class="quote-overlay"></div>
+                <div class="quote-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"They are clothing for you and you are clothing for them."</p>
+                    <span class="quote-source">— Surah Al-Baqarah (2:187)</span>
+                </div>
+            </div>
+
+            <div class="quote-card-item large" data-aos="fade-up" data-aos-delay="500">
+                <div class="quote-image-bg" style="background-image: url('images/quote-bg5.jpg')"></div>
+                <div class="quote-overlay"></div>
+                <div class="quote-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"A righteous wife to help you with your worldly and religious affairs is the best treasure anyone
+                        could have."</p>
+                    <span class="quote-source">— Prophet Muhammad ﷺ</span>
+                </div>
+            </div>
+
+            <div class="quote-card-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="quote-image-bg" style="background-image: url('images/quote-bg6.jpg')"></div>
+                <div class="quote-overlay"></div>
+                <div class="quote-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"The most blessed Nikkah is the one with the least expenses."</p>
+                    <span class="quote-source">— Prophet Muhammad ﷺ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PHOTO GALLERY ============ -->
+    <section class="section photo-gallery-section">
+        <div class="section-header" data-aos="fade-up">
+            <div class="header-ornament">✦</div>
+            <h2 class="section-title">Our Photo Gallery</h2>
+            <p class="section-subtitle">Moments captured, memories treasured</p>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="masonry-gallery">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/gallery1.jpg" alt="Memory">
+                <div class="gallery-overlay">
+                    <p>Caption here</p>
+                </div>
+            </div>
+            <div class="gallery-item tall" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/gallery2.jpg" alt="Memory">
+                <div class="gallery-overlay">
+                    <p>Caption here</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/gallery3.jpg" alt="Memory">
+                <div class="gallery-overlay">
+                    <p>Caption here</p>
+                </div>
+            </div>
+            <div class="gallery-item wide" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/gallery4.jpg" alt="Memory">
+                <div class="gallery-overlay">
+                    <p>Caption here</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                <img src="images/gallery5.jpg" alt="Memory">
+                <div class="gallery-overlay">
+                    <p>Caption here</p>
+                </div>
+            </div>
+            <div class="gallery-item tall" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/gallery6.jpg" alt="Memory">
+                <div class="gallery-overlay">
+                    <p>Caption here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FUTURE DREAMS - UMRAH ============ -->
+    <section id="future" class="section future-section">
+        <div class="section-header" data-aos="fade-up">
+            <div class="header-ornament">✦</div>
+            <h2 class="section-title">Our Future Dreams</h2>
+            <p class="section-subtitle">In Shaa Allah — What Lies Ahead</p>
+            <div class="header-line"></div>
+        </div>
+
+        <!-- Umrah Dream Card -->
+        <div class="future-card umrah-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="umrah-bg-pattern"></div>
+            <div class="umrah-content">
+                <div class="umrah-icon-container">
+                    <div class="kaaba-icon">
+                        <i class="fas fa-kaaba"></i>
+                    </div>
+                    <div class="umrah-glow"></div>
+                </div>
+
+                <h3 class="umrah-title">Umrah Together — In Shaa Allah 🕋</h3>
+
+                <div class="umrah-image-container">
+                    <img src="images/umrah.jpg" alt="Umrah Dream" class="umrah-image">
+                    <div class="image-frame">
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                    </div>
+                </div>
+
+                <div class="umrah-text">
+                    <p class="umrah-arabic">لَبَّيْكَ ٱللَّٰهُمَّ لَبَّيْكَ</p>
+                    <p class="umrah-translation">"Here I am, O Allah, here I am"</p>
+                    <p class="umrah-description">
+                        In Shaa Allah, one of our biggest dreams as a couple is to perform Umrah together.
+                        Standing before the Holy Kaaba, making Dua side by side — what a beautiful blessing that would
+                        be.
+                        May Allah grant us this opportunity and accept our prayers. Ameen. 🤲
+                    </p>
+                </div>
+
+                <div class="umrah-dua">
+                    <p class="dua-text">
+                        <i class="fas fa-hands-praying"></i>
+                        Ya Allah, bless our marriage, grant us a journey to Your Holy House together,
+                        and make us among those who walk in Your path. Ameen.
+                        <i class="fas fa-hands-praying"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Future Dreams -->
+        <div class="future-dreams-grid" data-aos="fade-up" data-aos-delay="400">
+            <div class="dream-item">
+                <div class="dream-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h4>Build Our Home</h4>
+                <p>A peaceful home filled with love, laughter, and Barakah. In Shaa Allah.</p>
+            </div>
+            <div class="dream-item">
+                <div class="dream-icon">
+                    <i class="fas fa-baby"></i>
+                </div>
+                <h4>Righteous Children</h4>
+                <p>May Allah bless us with righteous children who will be the coolness of our eyes. Ameen.</p>
+            </div>
+            <div class="dream-item">
+                <div class="dream-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <h4>Travel Together</h4>
+                <p>Exploring Allah's beautiful creation together. From mountains to oceans. In Shaa Allah.</p>
+            </div>
+            <div class="dream-item">
+                <div class="dream-icon">
+                    <i class="fas fa-hands-holding-heart"></i>
+                </div>
+                <h4>Serve Together</h4>
+                <p>Combining tech & medicine to serve humanity. A developer and a doctor — unstoppable In Shaa Allah!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="gallery-footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content" data-aos="fade-up">
+            <div class="footer-bismillah">بِسْمِ ٱللَّٰهِ</div>
+            <div class="footer-names">
+                <span>Groom Name</span>
+                <i class="fas fa-heart"></i>
+                <span>Bride Name</span>
+            </div>
+            <p class="footer-dua-text">
+                "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ"
+            </p>
+            <p class="footer-translation">
+                "Our Lord, give us in this world that which is good and in the Hereafter that which is good and protect
+                us from the punishment of the Fire."
+            </p>
+            <div class="footer-credits">
+                <p>
+                    <i class="fas fa-code"></i>
+                    Crafted with love by the Groom himself
+                    <i class="fas fa-heart"></i>
+                </p>
+                <p class="footer-year">© 2025 — Made with Tawakkul & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="" id="lightboxImage" class="lightbox-img">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
