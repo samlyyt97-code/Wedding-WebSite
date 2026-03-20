@@ -9,7 +9,7 @@ const CONFIG = {
     weddingDate: new Date('2026-04-18T00:00:00'),  // Change to your wedding date & time
     groomName: 'Samly',                         // Change to groom's name
     brideName: 'Asma',                         // Change to bride's name
-    password: 'nikah2025',                           // Change to your desired password
+    password: 'Madam',                           // Change to your desired password
     
     // Session key for authentication
     sessionKey: 'wedding_access_granted',
