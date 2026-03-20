@@ -130,7 +130,7 @@ function startCountdown() {
         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
         // Animate number changes
-        animateNumber(daysEl, days.toString().padStart(3, '0'));
+        animateNumber(daysEl, days.toString().padStart(2, '0'));
         animateNumber(hoursEl, hours.toString().padStart(2, '0'));
         animateNumber(minutesEl, minutes.toString().padStart(2, '0'));
         animateNumber(secondsEl, seconds.toString().padStart(2, '0'));
